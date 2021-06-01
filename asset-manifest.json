@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/DevGen-first-project/index.html/static/css/main.fa4e871e.chunk.css",
-    "main.js": "/DevGen-first-project/index.html/static/js/main.f2672212.chunk.js",
-    "main.js.map": "/DevGen-first-project/index.html/static/js/main.f2672212.chunk.js.map",
-    "runtime-main.js": "/DevGen-first-project/index.html/static/js/runtime-main.240c9d40.js",
-    "runtime-main.js.map": "/DevGen-first-project/index.html/static/js/runtime-main.240c9d40.js.map",
-    "static/css/2.500e930e.chunk.css": "/DevGen-first-project/index.html/static/css/2.500e930e.chunk.css",
-    "static/js/2.f93a5cf3.chunk.js": "/DevGen-first-project/index.html/static/js/2.f93a5cf3.chunk.js",
-    "static/js/2.f93a5cf3.chunk.js.map": "/DevGen-first-project/index.html/static/js/2.f93a5cf3.chunk.js.map",
-    "static/js/3.f516dfe2.chunk.js": "/DevGen-first-project/index.html/static/js/3.f516dfe2.chunk.js",
-    "static/js/3.f516dfe2.chunk.js.map": "/DevGen-first-project/index.html/static/js/3.f516dfe2.chunk.js.map",
-    "index.html": "/DevGen-first-project/index.html/index.html",
-    "static/css/2.500e930e.chunk.css.map": "/DevGen-first-project/index.html/static/css/2.500e930e.chunk.css.map",
-    "static/css/main.fa4e871e.chunk.css.map": "/DevGen-first-project/index.html/static/css/main.fa4e871e.chunk.css.map",
-    "static/js/2.f93a5cf3.chunk.js.LICENSE.txt": "/DevGen-first-project/index.html/static/js/2.f93a5cf3.chunk.js.LICENSE.txt",
-    "static/media/index.sass": "/DevGen-first-project/index.html/static/media/faceShadow.82f4a3de.png",
-    "static/media/selectImage.042f2390.png": "/DevGen-first-project/index.html/static/media/selectImage.042f2390.png"
+    "main.css": "/DevGen-first-project/static/css/main.f710805f.chunk.css",
+    "main.js": "/DevGen-first-project/static/js/main.f2672212.chunk.js",
+    "main.js.map": "/DevGen-first-project/static/js/main.f2672212.chunk.js.map",
+    "runtime-main.js": "/DevGen-first-project/static/js/runtime-main.4d48c36c.js",
+    "runtime-main.js.map": "/DevGen-first-project/static/js/runtime-main.4d48c36c.js.map",
+    "static/css/2.500e930e.chunk.css": "/DevGen-first-project/static/css/2.500e930e.chunk.css",
+    "static/js/2.f93a5cf3.chunk.js": "/DevGen-first-project/static/js/2.f93a5cf3.chunk.js",
+    "static/js/2.f93a5cf3.chunk.js.map": "/DevGen-first-project/static/js/2.f93a5cf3.chunk.js.map",
+    "static/js/3.f516dfe2.chunk.js": "/DevGen-first-project/static/js/3.f516dfe2.chunk.js",
+    "static/js/3.f516dfe2.chunk.js.map": "/DevGen-first-project/static/js/3.f516dfe2.chunk.js.map",
+    "index.html": "/DevGen-first-project/index.html",
+    "static/css/2.500e930e.chunk.css.map": "/DevGen-first-project/static/css/2.500e930e.chunk.css.map",
+    "static/css/main.f710805f.chunk.css.map": "/DevGen-first-project/static/css/main.f710805f.chunk.css.map",
+    "static/js/2.f93a5cf3.chunk.js.LICENSE.txt": "/DevGen-first-project/static/js/2.f93a5cf3.chunk.js.LICENSE.txt",
+    "static/media/index.sass": "/DevGen-first-project/static/media/faceShadow.82f4a3de.png",
+    "static/media/selectImage.042f2390.png": "/DevGen-first-project/static/media/selectImage.042f2390.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.240c9d40.js",
+    "static/js/runtime-main.4d48c36c.js",
     "static/css/2.500e930e.chunk.css",
     "static/js/2.f93a5cf3.chunk.js",
-    "static/css/main.fa4e871e.chunk.css",
+    "static/css/main.f710805f.chunk.css",
     "static/js/main.f2672212.chunk.js"
   ]
 }
