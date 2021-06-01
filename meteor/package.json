@@ -1,0 +1,35 @@
+{
+  "name": "DevGen-first-projecr",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "@fluentui/react": "^8.15.1",
+    "meteor-node-stubs": "^1.0.1",
+    "moment": "^2.29.1",
+    "nc-one-react-helpers": "^1.0.22",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/meteor": "^1.4.49",
+    "@types/mocha": "^8.0.3",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "typescript": "^4.2.2"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.tsx",
+      "server": "server/main.ts"
+    },
+    "testModule": "tests/main.ts"
+  }
+}
