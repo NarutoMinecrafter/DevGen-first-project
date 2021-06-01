@@ -45,6 +45,17 @@ $mobile-padding: 20px !global
     &__selector
       justify-content: center
 
+      &_img
+        width: 50px
+        height: 50px
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+
+        @media (max-width: 500px)
+          width: 30px
+          height: 30px
+
       img
         max-width: 50px
         max-height: 50px
@@ -294,16 +305,52 @@ $mobile-padding: 20px !global
     display: flex
     padding-bottom: 20px
     border-bottom: 1px solid #C4C4C4
+    gap: 20px
 
-    img 
-      width: 33%
+  &__img 
+    width: calc(33vw - 50px)
+    height: calc(33vw - 50px)
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+
+    @media (max-width: 1000px)
+      width: calc(50vw - 75px)
+      height: calc(50vw - 75px)
+
+    @media (max-width: 700px)
+      width: calc(100vw - 100px)
+      height: calc(100vw - 100px)
 
   &__paginator
     display: flex
     gap: 20px
     padding-top: 20px
-    justify-content: center
     align-items: center
+    user-select: none
+    overflow: auto
+    width: max-content
+    margin: auto
+    max-width: calc(100vw - 100px)
+
+    p
+      cursor: pointer
+
+    &_icon 
+      height: 21px
+      width: 21px
+      padding: 5px
+      border-radius: 5px
+      cursor: pointer
+      display: flex
+      justify-content: center
+      align-items: center
+
+      &:hover
+        background-color: #00000005
+
+      &:active
+        background-color: #00000010
 
     &_selected
       color: #008FBC

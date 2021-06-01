@@ -2,6 +2,7 @@
   "name": "first",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://narutominecrafter.github.io/DevGen-first-project",
   "dependencies": {
     "@fluentui/react": "^8.15.0",
     "@testing-library/jest-dom": "^5.11.4",
@@ -11,6 +12,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "gh-pages": "^3.2.0",
     "moment": "^2.29.1",
     "nc-one-react-helpers": "^1.0.22",
     "node-sass": "4.14",
@@ -23,6 +25,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
