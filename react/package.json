@@ -2,7 +2,7 @@
   "name": "first",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://narutominecrafter.github.io/DevGen-first-project/index.html",
+  "homepage": "https://narutominecrafter.github.io/DevGen-first-project",
   "dependencies": {
     "@fluentui/react": "^8.15.0",
     "@testing-library/jest-dom": "^5.11.4",
