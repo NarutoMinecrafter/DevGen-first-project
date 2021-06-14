@@ -18,15 +18,12 @@ import selectImage from './images/selectImage.png'
 
 import './styles/index.sass'
 import { getJSDocReturnType } from 'typescript'
-import { Modal } from '@fluentui/react'
+import { Modal, Callout } from '@fluentui/react'
 
 const initialCards = [
-  { title: 'Заголовок три четыре слова', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.', date: '25.05.2021' },
-  { title: 'Заголовок три четыре слова', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.', date: '25.05.2021' },
-  { title: 'Заголовок три четыре слова', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.', date: '25.05.2021' },
-  { title: 'Заголовок три четыре слова', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.', date: '25.05.2021' },
-  { title: 'Заголовок три четыре слова', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.', date: '25.05.2021' },
-  { title: 'Заголовок три четыре слова', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.', date: '25.05.2021' }
+  { title: 'Stage 1', text: 'We develop, test and launch systems: NFT- token generation, crossbreeding and creation of new presidents.', date: '25.05.2021' },
+  { title: 'Stage 2', text: 'Official start of the project. We open sales of NFT- tokens and start training the first presidents.', date: '25.05.2021' },
+  { title: 'Stage 3', text: 'We create a virtual map of the states. We are building economic, political, social and military systems of interaction between countries.', date: '25.05.2021' }
 ]
 
 const initialSelectImages = [selectImage, selectImage, selectImage, face, face, face, selectImage, face, selectImage, face, selectImage, face, selectImage, face, selectImage, face]
@@ -40,6 +37,8 @@ export const App = () => {
   const [selectedImage2, setSelectedImage2] = useState('')
   const [imageSelector, setImageSelector] = useState<number>()
   const [slideItem, setSlideItem] = useState(1)
+  const [showQuestionCallout, setShowQuestionCallout] = useState(false)
+  console.log(showQuestionCallout)
 
   const matches = useMediaQuery('(min-width: 700px)')
   const matches1000 = useMediaQuery('(min-width: 1000px)')
@@ -83,7 +82,11 @@ export const App = () => {
           <div className='main__balance'>
             <p>{matches && 'Balance: '}{balance}</p>
             <p className='main__balance-time'>{!matches && time}</p>
+            <div className='main__balance-question' id='question-target' onMouseEnter={() => setShowQuestionCallout(true)} />
           </div>
+          {showQuestionCallout && <Callout target='#question-target' className='question-callout' onDismiss={() => setShowQuestionCallout(false)} >
+            <p>It will take us 24 hours to train the new president. During this period, you cannot transfer NFT-tokens to other wallets. Otherwise, the process of creating a president is reset forever. As soon as the president takes office, the tokens will be available for withdrawal.</p>
+          </Callout>}
         </div>
         <div className='main__face-shadow' />
         <div className='main__face' />
