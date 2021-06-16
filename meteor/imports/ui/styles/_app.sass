@@ -151,6 +151,7 @@ $mobile-padding: 20px !global
       right: $desktop-padding + 52px
       background-image: url('../images/faceShadow.png')
       z-index: 9
+      max-height: 900px
       @media (max-width: 1000px)
         right: 42px
 
@@ -158,6 +159,7 @@ $mobile-padding: 20px !global
       right: $desktop-padding
       background-image: url('../images/face.png')
       z-index: 10
+      max-height: 900px
       @media (max-width: 1000px)
         right: 0
 
@@ -242,9 +244,6 @@ $mobile-padding: 20px !global
         &__body
           margin-top: $mobile-padding !important
           padding-left: 10px !important
-
-      &:last-child
-        border-right: 1px solid #C4C4C4
 
       &__body
         padding-left: 40px
