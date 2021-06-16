@@ -113,12 +113,15 @@ export const App = () => {
         </div>
       </div>
       <div className='footer'>
-        <p>© 2021 NewGovernment</p>
+        <div className='footer__text'>© 2021 NewGovernment</div>
         <div className='footer__links'>
-          <img src={Bitcoin} alt='Bitcoin' />
-          <img src={discord} alt='discord' />
-          <img src={telegram} alt='telegram' />
+          {/* <img src={Bitcoin} alt='Bitcoin' /> */}
+          <a href='https://discord.gg/NQN3ccb8ta' target='_blank' >
+            <img src={discord} alt='discord' />
+          </a>
+          {/* <img src={telegram} alt='telegram' /> */}
         </div>
+        <div className='footer__text'>by CryptoPanteon</div>
       </div>
       <Modal className='select-image-modal' isOpen={!!imageSelector} isBlocking={false} onDismiss={() => setImageSelector(undefined)} >
         <div className='select-image-modal__images'>

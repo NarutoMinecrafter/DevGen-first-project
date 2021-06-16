@@ -267,35 +267,38 @@ $mobile-padding: 20px !global
   .footer
     background-color: #F1F2F5
     padding: 10px $desktop-padding
+    display: flex
+    justify-content: space-between
+    align-items: center
 
-    @media (max-width: 700px)
-      display: flex
-      flex-direction: column-reverse
-      padding: 0
-      justify-content: center
+    // @media (max-width: 700px)
+    //   display: flex
+    //   flex-direction: column-reverse
+    //   padding: 0
+    //   justify-content: center
 
-      p
-        position: static !important
-        width: 100%
-        display: flex
-        justify-content: center
-        padding: 20px 0
+    //   p
+    //     // position: static !important
+    //     // width: 100%
+    //     // display: flex
+    //     // justify-content: center
+    //     // padding: 20px 0
 
-      &__links
-        position: static !important
-        padding-top: 20px
+    //   &__links
+    //     position: static !important
+    //     padding-top: 20px
 
-    p
-      position: absolute
-      display: flex
-      align-items: center
-      height: 25px
+    // p
+    //   position: absolute
+    //   display: flex
+    //   align-items: center
+    //   height: 25px
 
-    &__links
-      width: 100%
-      display: flex
-      justify-content: center
-      gap: 30px
+    // &__links
+    //   width: 100%
+    //   display: flex
+    //   justify-content: center
+    //   gap: 30px
 
 .select-image-modal
   .ms-Dialog-main
