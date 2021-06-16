@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/DevGen-first-project/static/css/main.c8aed35e.chunk.css",
+    "main.css": "/DevGen-first-project/static/css/main.4e72b41a.chunk.css",
     "main.js": "/DevGen-first-project/static/js/main.0af26e79.chunk.js",
     "main.js.map": "/DevGen-first-project/static/js/main.0af26e79.chunk.js.map",
     "runtime-main.js": "/DevGen-first-project/static/js/runtime-main.55606cd7.js",
@@ -12,7 +12,7 @@
     "static/js/3.847ce270.chunk.js.map": "/DevGen-first-project/static/js/3.847ce270.chunk.js.map",
     "index.html": "/DevGen-first-project/index.html",
     "static/css/2.500e930e.chunk.css.map": "/DevGen-first-project/static/css/2.500e930e.chunk.css.map",
-    "static/css/main.c8aed35e.chunk.css.map": "/DevGen-first-project/static/css/main.c8aed35e.chunk.css.map",
+    "static/css/main.4e72b41a.chunk.css.map": "/DevGen-first-project/static/css/main.4e72b41a.chunk.css.map",
     "static/js/2.5ddbb968.chunk.js.LICENSE.txt": "/DevGen-first-project/static/js/2.5ddbb968.chunk.js.LICENSE.txt",
     "static/media/index.sass": "/DevGen-first-project/static/media/faceShadow.82f4a3de.png",
     "static/media/selectImage.042f2390.png": "/DevGen-first-project/static/media/selectImage.042f2390.png"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.55606cd7.js",
     "static/css/2.500e930e.chunk.css",
     "static/js/2.5ddbb968.chunk.js",
-    "static/css/main.c8aed35e.chunk.css",
+    "static/css/main.4e72b41a.chunk.css",
     "static/js/main.0af26e79.chunk.js"
   ]
 }
