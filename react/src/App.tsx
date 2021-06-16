@@ -20,9 +20,9 @@ import { getJSDocReturnType } from 'typescript'
 import { Modal, Callout } from '@fluentui/react'
 
 const initialCards = [
-  { title: 'Stage 1', text: 'We develop, test and launch systems: NFT- token generation, crossbreeding and creation of new presidents.', date: '25.05.2021' },
-  { title: 'Stage 2', text: 'Official start of the project. We open sales of NFT- tokens and start training the first presidents.', date: '25.05.2021' },
-  { title: 'Stage 3', text: 'We create a virtual map of the states. We are building economic, political, social and military systems of interaction between countries.', date: '25.05.2021' }
+  { title: 'Stage 1', text: 'We develop, test and launch systems: NFT- token generation, crossbreeding and creation of new presidents.', date: '10.06.2021' },
+  { title: 'Stage 2', text: 'Official start of the project. We open sales of NFT- tokens and start training the first presidents.', date: '16.06.2021' },
+  { title: 'Stage 3', text: 'We create a virtual map of the states. We are building economic, political, social and military systems of interaction between countries.', date: '01.07.2021' }
 ]
 
 const initialSelectImages = [selectImage, selectImage, selectImage, face, face, face, selectImage, face, selectImage, face, selectImage, face, selectImage, face, selectImage, face]
