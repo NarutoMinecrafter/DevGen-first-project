@@ -59,39 +59,41 @@ export const App = () => {
         <div className='main__content'>
           {matches ? <img src={CreateNew} alt='Create new' /> : <img src={CreateNewMobile} alt='Create new' />}
           <img src={president} alt='president' />
-          <div className='main__selectors-time'>
-            <div className='main__selectors'>
-              <div className='main__selector' onClick={() => setImageSelector(1)} >
-                {selectedImage1 ? <div className='main__selector_img' style={{backgroundImage: `url(${selectedImage1})`}} /> : <img src={faceScan} alt='select' />}
-                {matches && <p>select</p>}
+          <div className='main__left-content'>
+            {/* <div className='main__selectors-time'>
+              <div className='main__selectors'>
+                <div className='main__selector' onClick={() => setImageSelector(1)} >
+                  {selectedImage1 ? <div className='main__selector_img' style={{backgroundImage: `url(${selectedImage1})`}} /> : <img src={faceScan} alt='select' />}
+                  {matches && <p>select</p>}
+                </div>
+                <div className='main__merge'>
+                  <img src={merge} alt='merge' />
+                  {matches && <p>merge</p>}
+                </div>
+                <div className='main__selector' onClick={() => setImageSelector(2)} >
+                  {selectedImage2 ? <div className='main__selector_img' style={{backgroundImage: `url(${selectedImage2})`}} /> : <img src={faceScan} alt='select' />}
+                  {matches && <p>select</p>}
+                </div>
               </div>
-              <div className='main__merge'>
-                <img src={merge} alt='merge' />
-                {matches && <p>merge</p>}
-              </div>
-              <div className='main__selector' onClick={() => setImageSelector(2)} >
-                {selectedImage2 ? <div className='main__selector_img' style={{backgroundImage: `url(${selectedImage2})`}} /> : <img src={faceScan} alt='select' />}
-                {matches && <p>select</p>}
-              </div>
+              {matches && <div className='main__time'>
+                <img src={timeImg} alt='time' />
+                <p>{time}</p>
+              </div>}
             </div>
-            {matches && <div className='main__time'>
-              <img src={timeImg} alt='time' />
-              <p>{time}</p>
-            </div>}
+            <div className='main__balance'>
+              <p>{matches && 'Balance: '}{balance}</p>
+              <p className='main__balance-time'>{!matches && time}</p>
+              <div className='main__balance-question' id='question-target' onMouseEnter={() => setShowQuestionCallout(true)} />
+            </div>
+            {showQuestionCallout && <Callout target='#question-target' className='question-callout' onDismiss={() => setShowQuestionCallout(false)} >
+              <p>It will take us 24 hours to train the new president. During this period, you cannot transfer NFT-tokens to other wallets. Otherwise, the process of creating a president is reset forever. As soon as the president takes office, the tokens will be available for withdrawal.</p>
+            </Callout>}
+            <p className='tokens-info' >You need 2 NFT to start created new tokens</p> */}
           </div>
-          <div className='main__balance'>
-            <p>{matches && 'Balance: '}{balance}</p>
-            <p className='main__balance-time'>{!matches && time}</p>
-            <div className='main__balance-question' id='question-target' onMouseEnter={() => setShowQuestionCallout(true)} />
-          </div>
-          {showQuestionCallout && <Callout target='#question-target' className='question-callout' onDismiss={() => setShowQuestionCallout(false)} >
-            <p>It will take us 24 hours to train the new president. During this period, you cannot transfer NFT-tokens to other wallets. Otherwise, the process of creating a president is reset forever. As soon as the president takes office, the tokens will be available for withdrawal.</p>
-          </Callout>}
         </div>
         <div className='main__face-shadow' />
         <div className='main__face' />
       </main>
-      <p className='tokens-info' >You need 2 NFT to start created new tokens</p>
       <div className='road-map'>
         <h1>Road map</h1>
         <div className='road-map__cards'>
