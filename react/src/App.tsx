@@ -51,15 +51,16 @@ export const App = () => {
 
   return (
     <div className='app' >
-      <header className='header' >
-        <img src={logo} alt='logo' />
-      </header>
-      <main className='main' >
-        <div className='main__content'>
-          {matches ? <img src={CreateNew} alt='Create new' /> : <img src={CreateNewMobile} alt='Create new' />}
-          <img src={president} alt='president' />
-          <div className='main__left-content'>
-            {/* <div className='main__selectors-time'>
+      <div className='content'>
+        <header className='header' >
+          <img src={logo} alt='logo' />
+        </header>
+        <main className='main' >
+          <div className='main__content'>
+            {matches ? <img src={CreateNew} alt='Create new' /> : <img src={CreateNewMobile} alt='Create new' />}
+            <img src={president} alt='president' />
+            <div className='main__left-content'>
+              {/* <div className='main__selectors-time'>
               <div className='main__selectors'>
                 <div className='main__selector' onClick={() => setImageSelector(1)} >
                   {selectedImage1 ? <div className='main__selector_img' style={{backgroundImage: `url(${selectedImage1})`}} /> : <img src={faceScan} alt='select' />}
@@ -88,28 +89,29 @@ export const App = () => {
               <p>It will take us 24 hours to train the new president. During this period, you cannot transfer NFT-tokens to other wallets. Otherwise, the process of creating a president is reset forever. As soon as the president takes office, the tokens will be available for withdrawal.</p>
             </Callout>}
             <p className='tokens-info' >You need 2 NFT to start created new tokens</p> */}
+            </div>
           </div>
-        </div>
-        <div className='main__face-shadow' />
-        <div className='main__face' />
-      </main>
-      <div className='road-map'>
-        <h1>Road map</h1>
-        <div className='road-map__cards'>
-          {cards.map((card, index) => {
-            return (
-              <div key={index} className='card'>
-                <div className='card__body'>
-                  <b>{card.title}</b>
-                  <p>{card.text}</p>
-                  <div className='card__date' >
-                    <img src={calendar} alt='calendar' />
-                    <p>{card.date}</p>
+          <div className='main__face-shadow' />
+          <div className='main__face' />
+        </main>
+        <div className='road-map'>
+          <h1>Road map</h1>
+          <div className='road-map__cards'>
+            {cards.map((card, index) => {
+              return (
+                <div key={index} className='card'>
+                  <div className='card__body'>
+                    <b>{card.title}</b>
+                    <p>{card.text}</p>
+                    <div className='card__date' >
+                      <img src={calendar} alt='calendar' />
+                      <p>{card.date}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            )
-          })}
+              )
+            })}
+          </div>
         </div>
       </div>
       <div className='footer'>
@@ -136,7 +138,7 @@ export const App = () => {
               <path d="M0.121653 5.815L4.7882 10.0685C4.91786 10.1738 5.0596 10.1941 5.21356 10.1293C5.36735 10.0644 5.44457 9.94697 5.44457 9.77675V7.05451L20.6111 7.05451C20.7246 7.05451 20.8178 7.01812 20.8906 6.9452C20.9634 6.87233 21 6.77911 21 6.66572V4.33245C21 4.21909 20.9636 4.12587 20.8907 4.05309C20.8177 3.98022 20.7245 3.94382 20.6112 3.94382L5.44448 3.94382L5.44448 1.22163C5.44448 1.05937 5.36714 0.941973 5.21344 0.869271C5.05935 0.804188 4.9176 0.828792 4.78795 0.941973L0.121397 5.24437C0.0403938 5.32533 0 5.42238 0 5.5359C0 5.64095 0.0406494 5.734 0.121653 5.815Z" fill={slideItem !== 1 ? "#008FBC" : "#C4C4C4"} />
             </svg>
           </div>
-          {selectImages2D.map((_, index) => <p key={index} className={slideItem === index+1 ? 'select-image-modal__paginator_selected' : undefined} onClick={() => setSlideItem(index+1)} >{index+1}</p>)}
+          {selectImages2D.map((_, index) => <p key={index} className={slideItem === index + 1 ? 'select-image-modal__paginator_selected' : undefined} onClick={() => setSlideItem(index + 1)} >{index + 1}</p>)}
           <div className='select-image-modal__paginator_icon'>
             <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={() => slideItem !== selectImages2D.length && setSlideItem(prevSlideItem => prevSlideItem + 1)}>
               <path d="M20.8783 5.185L16.2118 0.931466C16.0821 0.826159 15.9404 0.805897 15.7864 0.870725C15.6326 0.935637 15.5554 1.05303 15.5554 1.22325V3.94549H0.388879C0.2754 3.94549 0.182181 3.98188 0.109351 4.0548C0.0365639 4.12767 0 4.22089 0 4.33428V6.66755C0 6.78091 0.0363936 6.87413 0.109309 6.94691C0.182309 7.01978 0.275527 7.05618 0.388837 7.05618H15.5555V9.77837C15.5555 9.94063 15.6329 10.058 15.7866 10.1307C15.9407 10.1958 16.0824 10.1712 16.2121 10.058L20.8786 5.75563C20.9596 5.67467 21 5.57762 21 5.4641C21 5.35905 20.9594 5.266 20.8783 5.185Z" fill={slideItem !== selectImages2D.length ? "#008FBC" : "#C4C4C4"} />
